@@ -1,10 +1,26 @@
-a=int(input("Enter first num"))
-b=int(input("Enter second num"))
+class Calculator():
 
-print(a+b)
+	def __init__(self,name):
+	     print ("constructor called")
+	     self.name = name
+	
 
-a=int(input("Enter first num"))
-b=int(input("Enter second num"))
+	def  add(self,a,b):
+	     result = a+b
+	     return result
+	
+	
+	def  sub(self,a,b):
+	     return (a-b)
+	
+	def  sub(self,a,b):
+	     return (a*b)
 
-print(a-b)
-
+	def  sub(self,a,b):
+	     return (a/b)
+	
+obj1 = Calculator("what name")
+result = obj1.add(3,4)
+print(result)
+	
+	
